@@ -21,12 +21,14 @@ header {
     text-align: center;
     color: white;
     padding: 80px 0;
+    animation: fadeIn 1.5s ease-in-out;
 }
 
 header h1 {
     font-size: 3.5em;
     margin-bottom: 10px;
     font-weight: 700;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
 }
 
 header p {
@@ -42,6 +44,7 @@ header p {
     margin: 30px 0;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    animation: slideUp 1s ease-in-out;
 }
 
 #about h2 {
@@ -85,6 +88,17 @@ footer {
 footer p {
     font-size: 1.1em;
     font-weight: 500;
+}
+
+/* Animation Effects */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes slideUp {
+    0% { transform: translateY(50px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
 }
 
 /* Media Query for Mobile Devices */
