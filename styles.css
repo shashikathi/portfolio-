@@ -1,50 +1,111 @@
 /* General Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background: #f4f4f4;
-    transition: background 0.5s ease-in-out;
+    background-color: #f4f4f9;
+    color: #333;
 }
 
-header {
-    background: linear-gradient(45deg, #0073e6, #00c6ff);
-    color: white;
-    text-align: center;
+header, .section {
     padding: 20px;
+    margin: 20px;
 }
 
-nav a {
-    margin: 0 15px;
-    color: white;
+h1, h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+a {
     text-decoration: none;
-    font-weight: bold;
+    color: inherit;
 }
 
-section {
-    padding: 20px;
+/* Navigation Bar */
+.navbar {
+    background-color: #333;
+    padding: 10px 0;
     text-align: center;
 }
 
-/* Button Styling */
-button {
-    background: #0073e6;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    margin-top: 10px;
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
 }
 
-button:hover {
-    background: #005bb5;
+.navbar ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.navbar ul li a {
+    color: white;
+    font-size: 1.2rem;
+}
+
+/* Header Section */
+.header {
+    background: linear-gradient(135deg, #6e7c7c, #d5d9d8);
+    text-align: center;
+    color: white;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+/* Skills Section */
+.skills-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skills-list li {
+    background-color: #d5d9d8;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Social Icons */
+.social-links {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social-icon {
+    font-size: 2rem;
+    color: #333;
+    margin: 0 15px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-icon:hover {
+    transform: scale(1.2);
+    color: #0073b1; /* LinkedIn Blue */
 }
 
 /* Footer */
 footer {
-    background: #222;
+    background-color: #333;
     color: white;
     text-align: center;
-    padding: 10px;
-    margin-top: 20px;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar ul li {
+        display: block;
+        margin: 10px 0;
+    }
+    
+    .social-icon {
+        font-size: 1.8rem;
+    }
 }
