@@ -1,83 +1,111 @@
-/* Global Styles */
-body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #f4f4f9;
-    color: #333;
+/* General reset */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-h1, h2, h3 {
-    color: #2c3e50;
+/* Body Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+    line-height: 1.6;
 }
 
 /* Header */
 header {
+    background-image: url('https://via.placeholder.com/1500x600'); /* Add a custom background image URL */
+    background-size: cover;
+    background-position: center;
     text-align: center;
-    padding: 50px;
-    background-color: #34495e;
     color: white;
+    padding: 80px 0;
 }
 
 header h1 {
-    font-size: 3em;
+    font-size: 3.5em;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+header p {
+    font-size: 1.5em;
+    font-weight: 400;
 }
 
 /* About Section */
 #about {
-    padding: 40px;
+    padding: 50px 20px;
     text-align: center;
-    background-color: #ecf0f1;
-}
-
-/* Projects Section */
-#projects {
-    padding: 40px;
-    background-color: #fff;
-}
-
-.project-card {
-    background-color: #f9f9f9;
-    padding: 20px;
-    margin: 20px 0;
+    background-color: #ffffff;
+    margin: 30px 0;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.project-card h3 {
-    margin-top: 0;
-}
-
-/* Contact Section */
-#contact {
-    padding: 40px;
-    background-color: #ecf0f1;
-    text-align: center;
-}
-
-#contact a {
+#about h2 {
+    font-size: 2.5em;
     color: #2980b9;
-    text-decoration: none;
+    margin-bottom: 20px;
+    font-weight: 700;
 }
 
-#contact a:hover {
-    text-decoration: underline;
+#about p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+#about .social-links {
+    margin-top: 30px;
+}
+
+#about .social-links a {
+    margin: 0 15px;
+    color: #333;
+    font-size: 2.5em;
+    transition: all 0.3s ease;
+}
+
+#about .social-links a:hover {
+    color: #2980b9;
+    transform: scale(1.1);
 }
 
 /* Footer */
 footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #34495e;
+    background-color: #2980b9;
     color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
 }
 
-/* Responsive Design */
+footer p {
+    font-size: 1.1em;
+    font-weight: 500;
+}
+
+/* Media Query for Mobile Devices */
 @media (max-width: 768px) {
     header h1 {
+        font-size: 2.5em;
+    }
+
+    header p {
+        font-size: 1.2em;
+    }
+
+    #about {
+        padding: 30px 10px;
+    }
+
+    #about h2 {
         font-size: 2em;
     }
-    #about, #projects, #contact {
-        padding: 20px;
+
+    #about p {
+        font-size: 1em;
     }
 }
