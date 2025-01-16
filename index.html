@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K Shashi Preetham | Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <style>
+        body.dark {
+            background-color: #121212;
+            color: #f3f4f6;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900 dark:bg-gray-900 dark:text-gray-50">
+    <!-- Dark/Light Mode Toggle -->
+    <div class="fixed top-4 right-4">
+        <button id="theme-toggle" class="p-2 bg-gray-200 dark:bg-gray-700 rounded">Toggle Mode</button>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="h-screen flex flex-col items-center justify-center bg-gradient-to-r from-blue-500 to-purple-600 text-center">
+        <h1 class="text-4xl font-bold text-white mb-4">K Shashi Preetham</h1>
+        <p class="text-lg text-white mb-8">Tech Enthusiast | Business Strategist | Innovator</p>
+        <div class="flex space-x-4">
+            <a href="#" class="px-4 py-2 bg-white text-blue-600 font-semibold rounded shadow">Download Resume</a>
+            <a href="https://github.com/" class="px-4 py-2 bg-white text-blue-600 font-semibold rounded shadow">View GitHub</a>
+            <a href="#contact" class="px-4 py-2 bg-white text-blue-600 font-semibold rounded shadow">Let’s Connect</a>
+        </div>
+    </section>
+
+    <!-- About Me -->
+    <section class="py-16 px-8">
+        <h2 class="text-3xl font-bold text-center mb-8">About Me</h2>
+        <p class="text-center max-w-3xl mx-auto">Hi! I’m K Shashi Preetham, a tech enthusiast skilled in Python, Tableau, Power BI, Excel, and Business Development. I thrive on innovation and strategy, aiming to make impactful contributions in the tech industry.</p>
+        <div class="mt-8 flex justify-center">
+            <ul class="timeline">
+                <li class="mb-6">40% scholarship recipient</li>
+                <li class="mb-6">Participant at TechnOcean</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Skills Showcase -->
+    <section class="py-16 px-8 bg-gray-100 dark:bg-gray-800">
+        <h2 class="text-3xl font-bold text-center mb-8">Skills</h2>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+            <div>Python</div>
+            <div>Tableau</div>
+            <div>Power BI</div>
+            <div>Excel</div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 px-8">
+        <h2 class="text-3xl font-bold text-center mb-8">Contact Me</h2>
+        <form class="max-w-md mx-auto">
+            <div class="mb-4">
+                <label class="block mb-1">Name</label>
+                <input type="text" class="w-full px-4 py-2 border rounded" placeholder="Your Name">
+            </div>
+            <div class="mb-4">
+                <label class="block mb-1">Email</label>
+                <input type="email" class="w-full px-4 py-2 border rounded" placeholder="Your Email">
+            </div>
+            <div class="mb-4">
+                <label class="block mb-1">Message</label>
+                <textarea class="w-full px-4 py-2 border rounded" rows="4" placeholder="Your Message"></textarea>
+            </div>
+            <button type="submit" class="px-4 py-2 bg-blue-600 text-white font-semibold rounded">Send Message</button>
+        </form>
+    </section>
+
+    <footer class="text-center py-8 bg-gray-200 dark:bg-gray-700">
+        <p>Building the future, one line of code at a time!</p>
+    </footer>
+
+    <script>
+        const toggleButton = document.getElementById('theme-toggle');
+        toggleButton.addEventListener('click', () => {
+            document.body.classList.toggle('dark');
+        });
+    </script>
+</body>
+</html>
